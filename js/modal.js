@@ -19,6 +19,14 @@ var modal_9 = document.getElementById("modal-9");
 var btn_9 = document.getElementById("btn-9");
 var modal_10 = document.getElementById("modal-10");
 var btn_10 = document.getElementById("btn-10");
+var modal_11 = document.getElementById("modal-11");
+var btn_11 = document.getElementById("btn-11");
+var modal_12 = document.getElementById("modal-12");
+var btn_12 = document.getElementById("btn-12");
+var modal_13 = document.getElementById("modal-13");
+var btn_13 = document.getElementById("btn-13");
+var modal_14 = document.getElementById("modal-14");
+var btn_14 = document.getElementById("btn-14");
 var modal_req = document.getElementById("modal-req");
 var btn_req = document.getElementById("btn-req");
 var modal_sel = document.getElementById("modal-sel");
@@ -56,6 +64,18 @@ btn_9.addEventListener("click", function() {
 });
 btn_10.addEventListener("click", function() {
   modal_10.style.display = "block";
+});
+btn_11.addEventListener("click", function() {
+  modal_11.style.display = "block";
+});
+btn_12.addEventListener("click", function() {
+  modal_12.style.display = "block";
+});
+btn_13.addEventListener("click", function() {
+  modal_13.style.display = "block";
+});
+btn_14.addEventListener("click", function() {
+  modal_14.style.display = "block";
 });
 btn_req.addEventListener("click", function() {
   modal_req.style.display = "block";
@@ -98,6 +118,18 @@ window.addEventListener("click", function(event) {
   }
   if (event.target == modal_10) {
     modal_10.style.display = "none";
+  }
+  if (event.target == modal_11) {
+    modal_11.style.display = "none";
+  }
+  if (event.target == modal_12) {
+    modal_12.style.display = "none";
+  }
+  if (event.target == modal_13) {
+    modal_13.style.display = "none";
+  }
+  if (event.target == modal_14) {
+    modal_14.style.display = "none";
   }
   if (event.target == modal_req) {
     modal_req.style.display = "none";
