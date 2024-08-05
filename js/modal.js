@@ -1,5 +1,5 @@
 // Obtener referencias a los elementos del DOM
-var modal_1 = document.getElementById("modal-1");
+/*var modal_1 = document.getElementById("modal-1");
 var btn_1 = document.getElementById("btn-1");
 var modal_2 = document.getElementById("modal-2");
 var btn_2 = document.getElementById("btn-2");
@@ -26,7 +26,7 @@ var btn_12 = document.getElementById("btn-12");
 var modal_13 = document.getElementById("modal-13");
 var btn_13 = document.getElementById("btn-13");
 var modal_14 = document.getElementById("modal-14");
-var btn_14 = document.getElementById("btn-14");
+var btn_14 = document.getElementById("btn-14");*/
 var modal_req = document.getElementById("modal-req");
 var btn_req = document.getElementById("btn-req");
 var modal_sel = document.getElementById("modal-sel");
@@ -35,7 +35,7 @@ var modal_cup = document.getElementById("modal-cup");
 var btn_cup = document.getElementById("btn-cup");
 
 // Abrir modal al hacer clic en el botón
-btn_1.addEventListener("click", function() {
+/*btn_1.addEventListener("click", function() {
   modal_1.style.display = "block";
 });
 btn_2.addEventListener("click", function() {
@@ -76,7 +76,7 @@ btn_13.addEventListener("click", function() {
 });
 btn_14.addEventListener("click", function() {
   modal_14.style.display = "block";
-});
+});*/
 btn_req.addEventListener("click", function() {
   modal_req.style.display = "block";
 });
@@ -89,7 +89,7 @@ btn_cup.addEventListener("click", function() {
 
 // Cerrar modal al hacer clic fuera del contenido del modal
 window.addEventListener("click", function(event) {
-  if (event.target == modal_1) {
+  /*if (event.target == modal_1) {
     modal_1.style.display = "none";
   }
   if (event.target == modal_2) {
@@ -130,7 +130,7 @@ window.addEventListener("click", function(event) {
   }
   if (event.target == modal_14) {
     modal_14.style.display = "none";
-  }
+  }*/
   if (event.target == modal_req) {
     modal_req.style.display = "none";
   }
@@ -140,4 +140,43 @@ window.addEventListener("click", function(event) {
   if (event.target == modal_cup) {
     modal_cup.style.display = "none";
   }
+});
+
+document.getElementById('btn-bro').addEventListener('click', function() {
+  // URL del archivo PDF
+  const pdfUrl = 'files/brochure.pdf';
+  
+  // Crear un elemento de anclaje
+  const a = document.createElement('a');
+  a.href = pdfUrl;
+  a.target = '_blank'; // Abrir en una nueva pestaña
+  
+  // Simular un clic en el ancla para abrir el PDF en otra pestaña
+  a.click();
+});
+
+document.getElementById('btn-malla').addEventListener('click', function() {
+  // URL del archivo PDF
+  const pdfUrl = 'files/mallacurricular.pdf';
+  
+  // Crear un elemento de anclaje
+  const a = document.createElement('a');
+  a.href = pdfUrl;
+  a.target = '_blank'; // Abrir en una nueva pestaña
+  
+  // Simular un clic en el ancla para abrir el PDF en otra pestaña
+  a.click();
+});
+
+document.getElementById('btn-proceso').addEventListener('click', function() {
+  // URL del archivo PDF
+  const pdfUrl = 'files/req.pdf';
+  
+  // Crear un elemento de anclaje
+  const a = document.createElement('a');
+  a.href = pdfUrl;
+  a.target = '_blank'; // Abrir en una nueva pestaña
+  
+  // Simular un clic en el ancla para abrir el PDF en otra pestaña
+  a.click();
 });
